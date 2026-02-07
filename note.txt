@@ -1,0 +1,10 @@
+Portofolio Aliya
+
+navbar
+
+home
+about me
+portfolio showcase ( project, certicate, tech skill)
+contact me
+
+footer
