@@ -1,0 +1,157 @@
+@media screen and (max-width: 1024px) {
+    nav {
+        padding: 1.5rem 3rem;
+    }
+
+    .home {
+        padding: 2rem 3rem 0 3rem;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .home-img img {
+        width: 300px;
+    }
+
+    .about-wrapper {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .about-section, .showcase-section, .contact-section {
+        padding: 80px 8%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Navbar Mobile */
+    .navbar-capsule {
+        position: fixed;
+        right: -100%;
+        top: 5rem;
+        flex-direction: column;
+        height: 50vh;
+        justify-content: center;
+        background: rgba(247, 247, 242, 0.95);
+        width: 70%;
+        border-radius: 20px;
+        padding: 2rem;
+        transition: 0.4s ease-in-out;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    .navbar-capsule.active {
+        right: 2rem;
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
+
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        background-color: #1e1e24;
+        transition: 0.3s;
+    }
+
+    .menu-toggle.is-active .bar:nth-child(2) { opacity: 0; }
+    .menu-toggle.is-active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+    .menu-toggle.is-active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        width: 100%;
+    }
+
+    .logo-capsule {
+        margin-right: auto; 
+    }
+    .menu-toggle {
+        margin-left: auto;
+        display: block;
+        z-index: 1001;
+    }
+    .navbar-capsule.active {
+        right: 0;
+    }
+
+    .home {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 8rem 2rem 2rem;
+    }
+
+    .home-img {
+        order: -1;
+        margin-bottom: 2rem;
+    }
+
+    .home-text {
+        order: 1;
+    }
+
+    .home-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .home-text h3 {
+        padding-left: 0;
+        margin: 0 auto 1.5rem;
+    }
+
+    .home-text h3::before, .home-text h3::after {
+        display: none;
+    }
+
+    .social-icons, .scroll-btn {
+        display: none; 
+    }
+    .about-title {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .user-desc {
+        text-align: left;
+        min-height: auto;
+    }
+
+    .tab-content.active {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .modal-content {
+        width: 95%;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .home-img img {
+        width: 250px;
+    }
+
+    .tab-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn, .tab-btn {
+        width: 100%;
+    }
+}
